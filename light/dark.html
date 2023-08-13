@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+     .title{
+        text-align: center;
+     }
+     .body-light{
+        color: #232323;
+        background-color:rgb(247, 240, 227);
+     }
+     .body-dark{
+        color: rgb(245, 239, 228);
+        background-color:#2a2a2a;
+     }
+    </style>
+</head>
+<body class="body-light dark" id="body">
+    <h1 class="title">Light/Dark Theme </h1>
+    <button type="button" onclick="light()">LIGHT</button>
+    <button type="button" onclick="dark()">DARK</button>
+    
+    <script>
+        function dark()
+        {
+          const bodyElement=document.getElementById('body')
+          bodyElement.classList.remove('body-light');
+          bodyElement.classList.add('body-dark');
+        }
+        function light()
+        {
+            const bodyElement=document.getElementById('body')
+          bodyElement.classList.remove('body-dark');
+          bodyElement.classList.add('light');
+        }
+    </script>
+
+</body>
+</html>
